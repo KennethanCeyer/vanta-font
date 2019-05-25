@@ -6,7 +6,12 @@ set(CMAKE_CXX_STANDARD 14)            # Enable c++14 standard
 set(SOURCE_FILES src/font.c)
 
 add_subdirectory(src)
-add_subdirectory(tests)
+
+option(PACKAGE_TESTS "Build the tests" ON)
+if(PACKAGE_TESTS)
+    enable_testing()
+    add_subdirectory(tests)
+endif()
 
 # Add executable target with source files listed in SOURCE_FILES variable
 add_executable(vanta_font ${SOURCE_FILES})
