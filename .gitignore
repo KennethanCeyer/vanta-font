@@ -1,3 +1,9 @@
+# Build file
+build
+
+# Jetbrains
+.idea
+
 # Prerequisites
 *.d
 
