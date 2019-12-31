@@ -10,7 +10,7 @@
 #define VANTA_FONT_FONT_H
 
 typedef struct _VtFont {
-    char* path
+    char* path;
 } VtFont;
 
 

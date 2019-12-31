@@ -6,13 +6,12 @@
  *
  */
 
+#include <stdio.h>
 #include <check.h>
-#include "../src/font.c"
+#include "font.h"
 
-START_TEST ("vt_load_font") {
-    std::cout << "test";
-    EXPECT_TRUE(false);
-
+START_TEST (vt_load_font) {
+    printf("test");
     vt_load_font("./data/arial.ttf");
 }
 END_TEST

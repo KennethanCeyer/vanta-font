@@ -11,7 +11,7 @@
 #include "font.h"
 
 VtFont vt_load_font(char* font_path) {
-    VtFont vtFont = { font_path };
+    VtFont vtFont = { .path = font_path };
 
     FILE* fp = fopen(font_path, 'r');
     vt_read_font(fp, &vtFont);
